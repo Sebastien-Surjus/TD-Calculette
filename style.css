@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #00AA;
+}
+
+.grid-main{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+
+.grid-main .item{
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(213, 180, 250, 0.75);
+}
+
+.resultat{
+  grid-column-start: span 4;
+  background-color: #1a0641;
+  border-radius: 5px;
+  font-size: 150%;
+  color: white;
+  text-align: right;
+  font-size: 3em;
+}
+
+.AC{
+  grid-column-start: span 2;
+}
+
+.DEL{
+  grid-column-start: span 2;
+}
